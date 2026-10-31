@@ -1,0 +1,26 @@
+name: Publish Urdu Qibla Compass APK and ZIP
+on:
+  push:
+    branches: [qibla-compass-apk]
+    paths:
+      - '.github/workflows/publish-urdu-compass.yml'
+      - 'downloads/Urdu-Offline-Qibla-Compass-v1.1.apk'
+  workflow_dispatch:
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and package Android APK
+        run: |
+          set -e
+          cd downloads
+          sha256sum -c SHA256SUMS-v1.1.txt
+          zip -9 -j /tmp/Urdu-Offline-Qibla-Compass-v1.1-APK.zip Urdu-Offline-Qibla-Compass-v1.1.apk
+      - name: Publish GitHub Release with APK and ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create urdu-qibla-compass-v1.1             downloads/Urdu-Offline-Qibla-Compass-v1.1.apk             /tmp/Urdu-Offline-Qibla-Compass-v1.1-APK.zip             --target qibla-compass-apk             --title "Urdu Offline Compass & Qibla v1.1"             --notes "Offline Native Android Qibla Compass with Urdu and English directions. Layout fits screen without scrolling and footer includes Developer: Muhammad Talha kalwal 🇵🇰. APK and zipped APK provided for mobile download."
