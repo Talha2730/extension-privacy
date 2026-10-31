@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://talha2730.github.io/extension-privacy/sitemap.xml
