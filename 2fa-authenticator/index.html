@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>2FA Authenticator for Chrome – TOTP & OTP Codes</title>
+  <meta name="description" content="2FA Authenticator for Chrome generates secure TOTP and OTP verification codes. Scan QR codes, manage 2FA accounts and access codes quickly.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://talha2730.github.io/extension-privacy/2fa-authenticator/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2FA Authenticator for Chrome – TOTP & OTP Codes">
+  <meta property="og:description" content="Generate TOTP 2FA verification codes in Chrome. Scan QR codes, manage accounts and quickly access OTP codes.">
+  <meta property="og:url" content="https://talha2730.github.io/extension-privacy/2fa-authenticator/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2FA Authenticator for Chrome">
+  <meta name="twitter:description" content="Secure TOTP and OTP verification codes directly in Chrome.">
+  <meta name="theme-color" content="#2563eb">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"2FA Authenticator",
+    "applicationCategory":"SecurityApplication",
+    "operatingSystem":"Google Chrome",
+    "url":"https://talha2730.github.io/extension-privacy/2fa-authenticator/",
+    "installUrl":"https://chromewebstore.google.com/detail/2fa-authenticator/noaodekmecgpgpjafdmngklifdfmopkd",
+    "description":"Chrome extension for generating TOTP two-factor authentication and OTP verification codes, scanning QR codes, and managing authentication accounts.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+  }
+  </script>
+  <style>
+    :root{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#172033;background:#f5f8ff}
+    *{box-sizing:border-box} body{margin:0;line-height:1.6}
+    a{color:inherit}.wrap{max-width:1080px;margin:auto;padding:24px}
+    header{padding:14px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .logo{width:42px;height:42px;border-radius:12px;background:#2563eb;display:grid;place-items:center;color:#fff;font-size:22px;box-shadow:0 8px 24px #2563eb33}
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center;padding:64px 0}
+    h1{font-size:clamp(38px,6vw,66px);line-height:1.05;margin:0 0 20px;letter-spacing:-.04em}
+    h2{font-size:30px;line-height:1.2;margin:0 0 18px} h3{margin:0 0 8px}
+    .lead{font-size:20px;color:#536078;max-width:760px}.btn{display:inline-block;margin-top:18px;background:#2563eb;color:#fff;text-decoration:none;font-weight:800;padding:15px 22px;border-radius:13px;box-shadow:0 10px 28px #2563eb33}
+    .btn:hover{transform:translateY(-1px)}.card{background:#fff;border:1px solid #e4eaf5;border-radius:22px;padding:28px;box-shadow:0 14px 40px #1f3b7310}
+    .code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:30px;letter-spacing:5px;font-weight:800;color:#2563eb}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:20px 0 64px}
+    .feature{background:#fff;border:1px solid #e4eaf5;border-radius:18px;padding:22px}.feature p,.muted{color:#606d84}
+    section{padding:34px 0}.faq{display:grid;gap:14px}.faq article{background:#fff;border:1px solid #e4eaf5;border-radius:16px;padding:20px}
+    footer{border-top:1px solid #dde5f1;margin-top:48px;padding:26px 0;color:#657188;font-size:14px}
+    .small{font-size:14px;color:#6a7588}.pill{display:inline-block;background:#eaf2ff;color:#1f56b4;padding:7px 11px;border-radius:999px;font-weight:700;font-size:13px;margin-bottom:14px}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:38px 0}.grid{grid-template-columns:1fr}h1{font-size:42px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><div class="logo">2F</div><span>2FA Authenticator</span></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <span class="pill">Chrome Security Extension</span>
+          <h1>2FA Authenticator for Chrome</h1>
+          <p class="lead">Generate secure TOTP and OTP verification codes, scan authentication QR codes, and manage your two-factor authentication accounts directly in Chrome.</p>
+          <a class="btn" href="https://chromewebstore.google.com/detail/2fa-authenticator/noaodekmecgpgpjafdmngklifdfmopkd" rel="noopener">Install from Chrome Web Store</a>
+          <p class="small">Chrome Web Store extension ID: <strong>noaodekmecgpgpjafdmngklifdfmopkd</strong></p>
+        </div>
+        <div class="card" aria-label="Authenticator code preview">
+          <div class="muted">Example verification code</div>
+          <div class="code">482 731</div>
+          <p class="muted">Fast access to time-based one-time passwords for services that support standard TOTP authentication.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Secure two-factor authentication in your browser</h2>
+        <div class="grid">
+          <div class="feature"><h3>TOTP Codes</h3><p>Generate time-based one-time passwords for compatible websites and online services.</p></div>
+          <div class="feature"><h3>QR Code Setup</h3><p>Add supported 2FA accounts using authentication QR codes for faster setup.</p></div>
+          <div class="feature"><h3>Multiple Accounts</h3><p>Keep your supported authentication accounts organized and access verification codes quickly.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>What is 2FA Authenticator?</h2>
+        <p>2FA Authenticator is a Chrome extension for users who need TOTP-based two-factor authentication codes while browsing. It is designed for services that support standard authenticator codes and makes it convenient to access verification codes from Chrome.</p>
+        <p>Two-factor authentication adds an additional verification step to account sign-in. When a compatible website asks for a TOTP or authenticator code, the extension can generate the current code for an account you have configured.</p>
+      </section>
+
+      <section>
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <article><h3>Does it generate TOTP codes?</h3><p>Yes. The extension is designed to generate time-based one-time passwords for compatible services using standard TOTP authentication.</p></article>
+          <article><h3>Can I use QR codes to add accounts?</h3><p>The extension supports QR-code-based account setup where supported by the service and extension configuration.</p></article>
+          <article><h3>Where can I install the extension?</h3><p>Use the official Chrome Web Store button on this page. It links directly to the 2FA Authenticator listing.</p></article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Get 2FA Authenticator for Chrome</h2>
+        <p class="muted">Open the official Chrome Web Store listing to install the extension.</p>
+        <a class="btn" href="https://chromewebstore.google.com/detail/2fa-authenticator/noaodekmecgpgpjafdmngklifdfmopkd" rel="noopener">Open Chrome Web Store</a>
+      </section>
+    </main>
+
+    <footer>
+      <div>2FA Authenticator — Chrome extension landing page.</div>
+      <div><a href="../PRIVACY.md">Privacy Policy</a></div>
+    </footer>
+  </div>
+</body>
+</html>
